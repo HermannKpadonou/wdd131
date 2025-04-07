@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - place">
+    <meta name="author" content="Hermann M KPADONOU">
+    <title>CÔTE D'IVOIRE</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>CÔTE D'IVOIRE</h1>
+    </header>
+    <main class="main-content">
+        <div class="intro-section">
+            <h3><em>Sublime Land of Hope</em></h3>
+        </div>
+        <picture class="image-container">
+            <source srcset="images/people3.webp" media="(max-width: 767px)">
+            <source srcset="images/people1.webp" media="(min-width: 768px)">
+            <img src="images/people_imresizer.webp" alt="people" >
+        </picture>
+        <div class="data-section">
+            <h2>Data</h2>
+            <p>Area : 322,463 sq km</p>
+            <p>Population : Approximately 29 million</p>
+            <p>Political Capital : Yamoussoukro</p>
+            <p>Economic and Administrative Capital : Abidjan</p>
+            <p>Official Language : French</p>
+            <p>Fuseau horaire: UTC</p>
+            <p>Currency : West African CFA franc (XOF)</p>
+            <p>Calling Code : +225</p>
+        </div>
+        <div class="weather-section">
+            <h2>Weather<img src="images/weather.svg" alt="icon_weather"></h2>
+            <p>Temperature: 28 °C</p>
+            <p>Conditions: Generally sunny with a few scattered clouds</p>
+            <p>Wind: 10 km/h</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+    </div>
+    </main>
+    <footer>
+        <p><strong>&copy;<span id="currentYear">2024</span>🎖️|Hermann M. KPADONOU|🎖️CIV</strong></p>
+        <p><strong>Last Modified: <span id="lastModified"></span></strong></p>
+    </footer>
+</body>
+</html>

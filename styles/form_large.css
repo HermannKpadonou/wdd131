@@ -1,6 +1,6 @@
-@media (min-width: 500px) {
+@media (min-width: 768px) {
     .wf1 {
-        width: 300px; 
+        width: 600px; 
         padding: 20px;
         margin: 20px auto;
     }
@@ -13,14 +13,15 @@
         font-size: 1.2rem; 
     }
     .confirmation {
-        max-width: 400px; /* Largeur maximale plus grande pour les écrans larges */
-        padding: 30px; /* Ajustement du rembourrage pour les écrans larges */
-        margin: 30px auto; /* Ajustement de la marge pour les écrans larges */
-        font-size: 1.4rem; /* Taille de police plus grande pour les écrans larges */
+        max-width: 400px; 
+        width: 90%;
+        padding: 30px; 
+        margin: 30px auto; 
+        font-size: 1.4rem; 
     }
 
     .confirmation img {
-        width: 150px; /* Augmente la taille de l'image pour les écrans larges */
+        width: 150px; 
         height: 150px;
     }
 }

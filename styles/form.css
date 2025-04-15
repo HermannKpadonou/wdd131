@@ -176,7 +176,12 @@ footer {
     padding: 20px;
     margin: 20px auto;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     font-size: 1.2rem;
     text-align: center;
+}
+.confirmation img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
 }

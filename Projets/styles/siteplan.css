@@ -92,60 +92,59 @@ footer {
 
 
 .wireframe-section {
-    display: grid;
-    grid-template-columns: repeat(300px, 1fr);
-    gap: 10px;
-    margin-top: 20px;
-    padding: 10px;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    align-items: flex-start; 
+    justify-content: space-around; 
+    padding: 20px; 
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    margin-bottom: 40px; 
 }
 
 .wireframe-container {
+    flex: 1 1 calc(50% - 30px); 
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 5px;
-    background-color: #A6944B;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.wireframe {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border: 1px solid #ddd;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-    max-height: 200px;
-    object-fit: contain;
+    background-color: #A6944B; 
+    box-sizing: border-box; 
+    min-width: 300px; 
 }
 
 .wireframe-container h3 {
     text-align: center;
-    font-family: 'Roboto', sans-serif; 
-    font-weight: bold; 
-    color: #013883; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #013883;
+    margin-top: 0; 
+    margin-bottom: 10px;
 }
 
-.wireframe-container p {
-    text-align: center;
-    font-size: 0.9em;
-    color: #555;
+.wireframe {
+    display: block;
+    max-width: 100%;
+    height: auto; 
+    margin: 10px auto; 
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
 }
 
 
 @media (max-width: 768px) {
     .wireframe-section {
-        flex-direction: column;
+        flex-direction: column; 
+        align-items: center; 
     }
     .wireframe-container {
-        flex-basis: 100%;
+        flex-basis: 100%; 
+        margin-bottom: 20px; 
     }
     .wireframe {
-        max-height: none;
-        object-fit: initial;
+        max-height: none; 
     }
 }

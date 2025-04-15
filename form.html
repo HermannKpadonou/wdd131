@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Review - Hermann M. KPADONOU</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Form Review">
+    <meta name="author" content="Hermann M KPADONOU">
+    <link rel="shortcut icon" href="images/liste-de-controle.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <legend>Product Name</legend>
+                <label>
+                    <select name="product" id="product" required>
+                        <option value="" disabled selected>Choose a Product...</option>
+                    </select>
+                </label>
+            </fieldset>
+            <div >
+                <fieldset class="overall_rating">
+                  <legend>Overall Rating</legend>
+        
+                  <div class="rating">
+                    <label>&#x2606</label>
+                    <input type="radio" name="rating" id="rating1" value="1" required>
+                  </div>
+        
+                  <div class="rating">
+                    <label>&#x2606 &#x2606</label>
+                    <input type="radio" name="rating" id="rating2" value="2">
+                  </div>
+        
+                  <div class="rating">
+                    <label>&#x2606 &#x2606 &#x2606</label>
+                    <input type="radio" name="rating" id="rating3" value="3">
+                  </div>
+        
+                  <div class="rating">
+                    <label>&#x2606 &#x2606 &#x2606 &#x2606</label>
+                    <input type="radio" name="rating" id="rating4" value="4">
+                  </div>
+        
+                  <div class="rating">
+                    <label>&#x2606 &#x2606 &#x2606 &#x2606 &#x2606</label>
+                    <input type="radio" name="rating" id="rating5" value="5">
+                  </div>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <label>
+                    <input type="date" name="install_date"  placeholder="mm/dd/yyyy" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Which features did you find useful in the product? <br><em>(Check all that apply)</em></legend>
+                <div class="feature">
+                    <input type="checkbox" id="durability" name="features" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                
+                <div class="feature">
+                    <input type="checkbox" id="ease_of_use" name="features" value="ease_of_use">
+                    <label for="ease_of_use">Ease of Use</label>
+                </div>
+
+                <div class="feature">
+                    <input type="checkbox" id="performance" name="features" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+
+                <div class="feature">
+                    <input type="checkbox" id="design" name="features" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (optional)</legend>
+                <label>
+                    <textarea name="review" rows="5" cols="30"></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Name (optional)</legend>
+                <label>
+                    <input type="text" name="name">
+                </label>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p><strong>&copy;<span id="currentYear">2024</span>🎖️|Hermann M. KPADONOU|🎖️CIV</strong></p>
+        <p><strong>Last Modified: <span id="lastModified"></span></strong></p>
+    </footer>
+</body>
+</html>

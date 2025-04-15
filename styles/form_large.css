@@ -1,0 +1,26 @@
+@media (min-width: 500px) {
+    .wf1 {
+        width: 300px; 
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .overall_rating {
+        flex-wrap: nowrap; 
+    }
+
+    .rating label {
+        font-size: 1.2rem; 
+    }
+    .confirmation {
+        max-width: 400px; /* Largeur maximale plus grande pour les écrans larges */
+        padding: 30px; /* Ajustement du rembourrage pour les écrans larges */
+        margin: 30px auto; /* Ajustement de la marge pour les écrans larges */
+        font-size: 1.4rem; /* Taille de police plus grande pour les écrans larges */
+    }
+
+    .confirmation img {
+        width: 150px; /* Augmente la taille de l'image pour les écrans larges */
+        height: 150px;
+    }
+}

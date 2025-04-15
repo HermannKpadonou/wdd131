@@ -1,0 +1,151 @@
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa; 
+}
+
+header {
+    background-color: #013883; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    display: block;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #013883; 
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+
+.color-palette {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.color-box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+
+section:nth-child(7) h2 { 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
+    color: #013883; 
+}
+
+section:nth-child(7) p { 
+    font-family: 'Open Sans', sans-serif; 
+}
+
+section:nth-child(7) p strong { 
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400; 
+}
+
+footer {
+    background-color: #013883; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.wireframe-section {
+    display: grid;
+    grid-template-columns: repeat(300px, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.wireframe-container {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #A6944B;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.wireframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.wireframe-container h3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold; 
+    color: #013883; 
+}
+
+.wireframe-container p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .wireframe-section {
+        flex-direction: column;
+    }
+    .wireframe-container {
+        flex-basis: 100%;
+    }
+    .wireframe {
+        max-height: none;
+        object-fit: initial;
+    }
+}

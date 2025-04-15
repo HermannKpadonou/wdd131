@@ -114,8 +114,8 @@ fieldset legend {
 
 .overall_rating{
     display: flex;
+    align-items: flex-start;
     justify-content: space-evenly;
-    align-items: left;
     flex-wrap: wrap;
   }
   
@@ -143,6 +143,7 @@ fieldset legend {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .feature input[type="checkbox"] {

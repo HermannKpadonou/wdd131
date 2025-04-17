@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Gallery-Ann Nielsen Private College of Excellence</title>
+    <meta name="description" content="Contact information, gallery, and donation form for Ann Nielsen Private College of Excellence">
+    <meta name="author" content="Hermann M KPADONOU">
+    <link rel="shortcut icon" href="images/Logo jaune verticale@4x.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo jaune horizontale@4x.png" alt="logo of Cpean" width="200" height="100">
+        </div>
+        
+        <button class="hamburger" aria-label="Menu">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html" target="_blank">About us</a></li>
+                <li><a href="contact-galerie.html" target="_blank">Galerie & Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-section">
+            <h2>Our School Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="images/cour.jpg" alt="School building" loading="lazy">
+                    <p>Our main campus building</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/labo1.jpg" alt="Classroom" loading="lazy">
+                    <p>Sciences Labo</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/bibliotheque.jpg" alt="Library" loading="lazy">
+                    <p>School library</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/salleinfo.jpg" alt="it" loading="lazy">
+                    <p>TICS</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/meeting-room.jpg" alt="meeting-room" loading="lazy">
+                    <p>Meeting Room</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/Cpean-img (1).jpg" alt="Students" loading="lazy">
+                    <p>Best Students collaborating</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact Information</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Address</h3>
+                    <p>New City<br>
+                    Soumahorodougou, Côte d'ivoire</p>
+                    <h3>Phone</h3>
+                    <p>+225 0707 3688 63</p>
+                    <h3>Email</h3>
+                    <p>info@collegeannnielsen.com</p>
+                    <h3>Office Hours</h3>
+                    <p>Monday-Friday: 7:00 AM - 5:00 PM<br>
+                    Saturday: 9:00 AM - 2:00 PM</p>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3973.3383000614986!2d-6.550047125741948!3d5.209422037038999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMTInMzMuOSJOIDbCsDMyJzUwLjkiVw!5e0!3m2!1sfr!2sci!4v1744796626744!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p>Find us on the map</p>
+                </div>
+            </div>
+        </section>
+
+    <div class="form-container">
+        <section class="contact-form-section">
+            <h2>Contact Us</h2>
+            <div class="form-with-image">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject">
+                            <option value="admission">Admission Inquiry</option>
+                            <option value="programs">Programs Information</option>
+                            <option value="feedback">Feedback/Suggestion</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="donation-section">
+            <h2>Support Our School</h2>
+            <p>Your generous donations help us maintain our facilities, provide scholarships, and continue offering excellent education.</p>
+            <div class="form-with-image">
+                <form id="donationForm">
+                    <div class="form-group">
+                        <label for="donorName">Full Name:</label>
+                        <input type="text" id="donorName" name="donorName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorEmail">Email:</label>
+                        <input type="email" id="donorEmail" name="donorEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donationAmount">Donation Amount ($):</label>
+                        <input type="number" id="donationAmount" name="donationAmount" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="donationPurpose">Purpose of Donation (Optional):</label>
+                        <select id="donationPurpose" name="donationPurpose">
+                            <option value="general">General Fund</option>
+                            <option value="scholarship">Scholarship Fund</option>
+                            <option value="facilities">Facilities Improvement</option>
+                            <option value="specific">Specific Program</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMethod">Payment Method:</label>
+                        <select id="paymentMethod" name="paymentMethod" required>
+                            <option value="credit">Credit Card</option>
+                            <option value="bank">Bank Transfer</option>
+                            <option value="mobile">Mobile Payment</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="donorMessage">Message (Optional):</label>
+                        <textarea id="donorMessage" name="donorMessage" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Make a Donation</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    </main>
+
+    <footer>
+        <p><strong>&copy;<span id="currentYear">2024</span>🎖️|Hermann M. KPADONOU|🎖️CIV</strong></p>
+        <p><strong>Last Modified: <span id="lastModified"></span></strong></p>
+    </footer>
+</body>
+</html>

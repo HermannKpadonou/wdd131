@@ -1,0 +1,555 @@
+/* ====== Base Styles ====== */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ====== Header Styles ====== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #013883;
+    color: white;
+    border-bottom: 2px solid #A6944B;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #A6944B;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 2rem;
+   
+}
+
+nav li {
+    margin-left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #A6944B;
+}
+
+/* ====== Hero Section ====== */
+.hero {
+    margin-bottom: 3rem;
+    text-align: center;
+    background-color: #e0e8f3;
+    background-size: cover;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color: #013883;
+    margin-bottom: 1.5rem;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 1rem auto 0;
+    height: 400px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.hero-text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(1, 56, 131, 0.8);
+    color: white;
+    padding: 0.95rem;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.hero-text-overlay h3 {
+    margin-top: 0;
+    color: #A6944B;
+    margin-bottom: 0.5rem;
+}
+
+/* ====== Founder Section ====== */
+.founder-speech {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid #3E5D7A;
+    border-radius: 8px;
+}
+
+.founder-image {
+    flex: 1;
+    height: 600px;
+    width: 100%;
+    background-color: #ddd;
+    background-image: url('../images/foundator.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    border-radius: 6px;
+}
+
+.founder-text {
+    flex: 1;
+}
+
+.founder-text h3 {
+    color: #013883;
+    margin-bottom: 1rem;
+}
+
+/* ====== Values & Missions ====== */
+.values-missions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.values, .missions {
+    padding: 2rem;
+    border: 1px solid #3E5D7A;
+    text-align: left;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.values h3, .missions h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #013883;
+    text-align: center;
+}
+
+
+
+
+.about-programs, .about-pedagogy {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.program-text, .pedagogy-text {
+    flex: 1;
+    padding: 20px;
+}
+
+
+.program-image, .pedagogy-image {
+    flex-shrink: 0;
+}
+
+
+.program-image img, .pedagogy-image img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.program-text h2, .pedagogy-text h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+
+.program-text p, .pedagogy-text p {
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.program-list, .pedagogy-text ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.program-list li, .pedagogy-text ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #34495e;
+}
+
+
+.program-list strong, .pedagogy-text ul strong {
+    color: #2c3e50;
+}
+
+.about-team{
+    padding: 1rem;
+    border: 1px solid #3E5D7A;
+    text-align: left;
+    border-radius: 8px;
+    background-color: white;
+}
+
+
+.about-programs h2,
+.about-pedagogy h2 {
+    color: #013883;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.about-programs p,
+.about-pedagogy p {
+    margin-bottom: 1rem;
+    text-align: left;
+    color: #555;
+}
+
+.about-programs ul,
+.about-pedagogy ul {
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.about-programs ul li,
+.about-pedagogy ul li {
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+
+
+.teacher-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.teacher-card {
+    flex: 1 1 300px;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+}
+
+.teacher-card img {
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.teacher-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.teacher-card p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.teacher-card strong {
+    color: #3498db;
+}
+
+.gallery-section {
+    margin: 2rem 0;
+}
+.gallery-section h2,.contact-section h2 {
+    color: #013883;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 6px;
+    background-color: #A6944B;
+    border: 1px solid #3E5D7A;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.gallery-item p {
+    background-color: #f5f5f5;
+    padding: 0.8rem;
+    margin: 0;
+    text-align: center;
+    color: #3E5D7A;
+    font-size: 0.9rem;
+}
+
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding: 2rem;
+    border-radius: 6px;
+    background-color: aliceblue;
+    border: 1px solid #A6944B;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.contact-info h3 {
+    color: #A6944B;
+    margin: 1.2rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-info p {
+    margin: 0 0 1rem;
+    color: #555;
+}
+
+.map-container {
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background-image: url('../images/imgbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+
+.contact-form-section, .donation-section {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #013883;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 50%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #013883;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #3E5D7A;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #013883;
+    color: white;
+    border-top: 2px solid #A6944B;
+}
+
+
+.placeholder-image {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+
+/* Style de base du bouton hamburger */
+.hamburger {
+    display: none; /* Caché par défaut sur desktop */
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-box {
+    width: 30px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s;
+}
+
+.hamburger-inner::before {
+    top: -8px;
+}
+
+.hamburger-inner::after {
+    bottom: -8px;
+}
+
+/* Menu navigation */
+.nav-menu {
+    transition: transform 0.3s ease;
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #f1c40f; /* Couleur jaune pour hover */
+}
+
+/* Styles pour l'état actif (menu ouvert) */
+.hamburger.active .hamburger-inner {
+    transform: rotate(45deg);
+}
+
+.hamburger.active .hamburger-inner::before {
+    transform: rotate(-90deg) translateX(-8px);
+}
+
+.hamburger.active .hamburger-inner::after {
+    opacity: 0;
+}

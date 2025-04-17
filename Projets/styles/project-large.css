@@ -1,0 +1,88 @@
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block; /* Affiche le bouton sur mobile */
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        transform: translateX(-100%);
+        padding-top: 80px;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .nav-menu li {
+        margin: 15px 0;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-bottom: 0.75rem;
+    }
+
+    .founder-speech {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+    
+    main section {
+        padding: 1.5rem;
+    }
+
+    .teacher-profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .teacher-card {
+        max-width: 100%;
+    }
+
+    .about-programs, .about-pedagogy {
+        flex-direction: column;
+    }
+    
+    .program-image, .pedagogy-image {
+        order: -1; 
+    }
+    
+    .program-image img, .pedagogy-image img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+    }
+}

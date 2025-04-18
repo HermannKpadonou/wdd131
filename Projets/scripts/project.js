@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
     if (!localStorage.getItem('contactSubmissions')) {
         localStorage.setItem('contactSubmissions', 0);
     }
@@ -6,60 +7,80 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('donationSubmissions', 0);
     }
     
-    document.getElementById('contactCount').textContent = localStorage.getItem('contactSubmissions');
-    document.getElementById('donationCount').textContent = localStorage.getItem('donationSubmissions');
+  
+    const contactCountElement = document.getElementById('contactCount');
+    const donationCountElement = document.getElementById('donationCount');
+    
+    if (contactCountElement) {
+        contactCountElement.textContent = localStorage.getItem('contactSubmissions');
+    }
+    
+    if (donationCountElement) {
+        donationCountElement.textContent = localStorage.getItem('donationSubmissions');
+    }
+    
     
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
+           
             let contactCount = parseInt(localStorage.getItem('contactSubmissions')) + 1;
             localStorage.setItem('contactSubmissions', contactCount);
             
-            document.getElementById('contactResponse').style.display = 'block';
-            document.getElementById('contactCount').textContent = contactCount;
+           
+            const contactResponse = document.getElementById('contactResponse');
+            if (contactResponse) {
+                contactResponse.style.display = 'block';
+            }
             
-            this.reset();
+     
+            if (contactCountElement) {
+                contactCountElement.textContent = contactCount;
+            }
+            
+            
         });
     }
     
+   
     const donationForm = document.getElementById('donationForm');
     if (donationForm) {
         donationForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
+           
             let donationCount = parseInt(localStorage.getItem('donationSubmissions')) + 1;
             localStorage.setItem('donationSubmissions', donationCount);
             
-            document.getElementById('donationResponse').style.display = 'block';
-            document.getElementById('donationCount').textContent = donationCount;
+           
+            const donationResponse = document.getElementById('donationResponse');
+            if (donationResponse) {
+                donationResponse.style.display = 'block';
+            }
             
-            this.reset();
-        });
-    }
-    
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    if (hamburger && navMenu) {
-        hamburger.addEventListener('click', function() {
-            this.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            
-            if (navMenu.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-            } else {
-                document.body.style.overflow = '';
+        
+            if (donationCountElement) {
+                donationCountElement.textContent = donationCount;
             }
         });
-        
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
     }
+});
+
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('is-active');
+    navMenu.classList.toggle('is-active');
+});
+
+
+navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('is-active');
+        navMenu.classList.remove('is-active');
+    });
 });

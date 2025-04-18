@@ -471,9 +471,9 @@ footer {
 }
 
 
-/* Style de base du bouton hamburger */
+
 .hamburger {
-    display: none; /* Caché par défaut sur desktop */
+    display: none; 
     cursor: pointer;
     background: none;
     border: none;
@@ -538,10 +538,10 @@ footer {
 }
 
 .nav-menu a:hover {
-    color: #f1c40f; /* Couleur jaune pour hover */
+    color: #f1c40f; 
 }
 
-/* Styles pour l'état actif (menu ouvert) */
+
 .hamburger.active .hamburger-inner {
     transform: rotate(45deg);
 }
